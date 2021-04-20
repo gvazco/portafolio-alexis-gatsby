@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     name: "facebook",
-    link: "https://facebook.com/mevasacomercializadora",
+    link: "https://facebook.com/",
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ export default [
   {
     id: 3,
     name: "instagram",
-    link: "https://instagram.com/mevasacomercializadora",
+    link: "https://instagram.com/",
   },
   {
     id: 4,
