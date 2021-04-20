@@ -9,29 +9,28 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogImage from "../images/icon.png"
 
-function SEO({ description, lang, meta, title, image }) {
-  const { site } = useStaticQuery(
+const SEO = ({ description, lang, meta, title }) => {
+  const { wp, wpUser } = useStaticQuery(
     graphql`
       query {
-        site {
-          siteMetadata {
+        wp {
+          generalSettings {
             title
             description
-            author
-            url
           }
+        }
+
+        # if there's more than one user this would need to be filtered to the main user
+        wpUser {
+          twitter: name
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-
-  const defaultTitle = site.siteMetadata.title
-
-  const url = site.siteMetadata.url
+  const metaDescription = description || wp.generalSettings?.description
+  const defaultTitle = wp.generalSettings?.title
 
   return (
     <Helmet
@@ -40,44 +39,22 @@ function SEO({ description, lang, meta, title, image }) {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      description={metaDescription}
-      image={ogImage}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
-          property: `og:url`,
-          content: url,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
           property: `og:title`,
           content: title,
         },
         {
-          property: `og:image`,
-          content: `${url}${image || ogImage}`,
-        },
-        {
-          property: `og:image:width`,
-          content: `1200`,
-        },
-        {
-          property: `og:image:height`,
-          content: `630`,
-        },
-        {
-          property: `og:image:type`,
-          content: `image/jpeg`,
-        },
-        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
         },
         {
           name: `twitter:card`,
@@ -85,7 +62,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: wpUser?.twitter || ``,
         },
         {
           name: `twitter:title`,
@@ -111,7 +88,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  image: PropTypes.string,
 }
 
 export default SEO
