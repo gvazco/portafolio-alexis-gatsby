@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: `Alexis Velázquez`,
     description: `Portafolio de trabajos profesionales.`,
     author: `@alexisvelazquez`,
-    image: "/src/images/team.jpg",
+    image: `/src/images/team.jpg`,
     url: `https://alexisvelazquez.com`,
     siteUrl: `https://alexisvelazquez.com`,
   },
