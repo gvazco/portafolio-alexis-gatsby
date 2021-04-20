@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: `Alexis Velázquez`,
     description: `Portafolio de trabajos profesionales.`,
     author: `@alexisvelazquez`,
-    image: "/src/images/icon.png",
+    image: "/src/images/team.jpg",
     url: `https://alexisvelazquez.com`,
     siteUrl: `https://alexisvelazquez.com`,
   },
@@ -31,7 +31,7 @@ module.exports = {
       options: {
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `/src/images/icon.png`,
+        icon: `/src/images/IconoMevasa.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
