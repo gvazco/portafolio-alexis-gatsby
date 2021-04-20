@@ -13,8 +13,8 @@ export default function Blog(props) {
   return (
     <BlogLayout>
       <Seo
-        title="Blog de Techos y Mantenimientos | Mevasa"
-        description="Lorem Ipsuom dolor sit amet consecutur"
+        title="Portafolio de Alexis Velázquez"
+        description="Muestra de mis mejores trabajos profesionales."
         image={imageBlog}
       />
       <PostList posts={posts} />
