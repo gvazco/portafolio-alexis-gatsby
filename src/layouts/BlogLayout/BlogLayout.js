@@ -7,10 +7,10 @@ import "./BlogLayout.scss"
 export default function BlogLayout(props) {
   const { children, className } = props
   return (
-    <div>
+    <Container>
       <NavBar />
       <Container>{children}</Container>
       <Footer />
-    </div>
+    </Container>
   )
 }

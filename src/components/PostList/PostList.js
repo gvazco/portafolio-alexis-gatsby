@@ -14,7 +14,7 @@ export default function PostList(props) {
     <CardColumns className="post-list">
       {map(posts, post => (
         <Link to={`/${post.slug}`}>
-          <Card border="dark" className="post-list__item text-center">
+          <Card className="post-list__item text-center">
             <Card.Img
               variant="top"
               src={post.featuredImage.node.localFile.publicURL}

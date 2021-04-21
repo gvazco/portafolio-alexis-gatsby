@@ -23,12 +23,14 @@ export default function Footer() {
         <Col className="contacto">
           Email:alexveco@outlook.com
           <br />
-          <span>Design by: DISTURBIO ILUSTRATIVO</span>
+          <span>Diseño por: DISTURBIO ILUSTRATIVO</span>
         </Col>
       </Row>
 
       <span>© </span>
-      <span>2021 ALEXIS VELÁZQUEZ PORTFOLIO - All Right Reserved</span>
+      <span>
+        2021 ALEXIS VELÁZQUEZ PORTFOLIO <br /> All Right Reserved.
+      </span>
       <span></span>
     </Container>
   )
