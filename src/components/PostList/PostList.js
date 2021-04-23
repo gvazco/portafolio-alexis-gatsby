@@ -22,14 +22,10 @@ export default function PostList(props) {
             <Card.ImgOverlay className="item-meta">
               <div>
                 <Card.Title>{post.title}</Card.Title>
-                <Card.Subtitle>{post.title}</Card.Subtitle>
+
+                <Card.Subtitle>{post.categories.nodes.name}</Card.Subtitle>
               </div>
             </Card.ImgOverlay>
-
-            {/* <Card.Header>
-              <Card.Title>{post.title}</Card.Title>
-              <Card.Subtitle>{post.title}</Card.Subtitle>
-            </Card.Header> */}
           </Card>
         </Link>
       ))}

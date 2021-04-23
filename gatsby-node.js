@@ -17,6 +17,11 @@ exports.createPages = async ({ actions, graphql }) => {
           content
           slug
           date
+          categories {
+            nodes {
+              name
+            }
+          }
           featuredImage {
             node {
               localFile {

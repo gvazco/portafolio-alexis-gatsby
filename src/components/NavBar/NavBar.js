@@ -1,6 +1,8 @@
 import React from "react"
+import { Image } from "semantic-ui-react"
 import { Navbar, Nav } from "react-bootstrap"
 import "./NavBar.scss"
+import Logo from "../../images/logo.png"
 
 export default function NavBarMenu() {
   return (
@@ -12,7 +14,7 @@ export default function NavBarMenu() {
       className="navbar"
     >
       <Navbar.Brand href="/">
-        Alexis Velázquez <sup> Diseñador</sup>
+        <Image src={Logo} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

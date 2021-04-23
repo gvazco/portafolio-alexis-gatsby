@@ -1,18 +1,13 @@
 @import "../../scss/index.scss";
 
-@font-face {
-  font-family: AkuKamu;
-  src: url("../../images/Aku&Kamu.otf") format("opentype");
-}
-
 .navbar {
   @media (max-width: $breakpoint-down-md) {
     flex-direction: row-reverse;
   }
   .navbar-brand {
-    text-transform: uppercase;
-    font-family: AkuKamu;
-    letter-spacing: 2px;
-    font-size: 25px;
+    img {
+      max-width: 220px !important;
+      margin-top: 10px;
+    }
   }
 }

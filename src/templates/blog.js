@@ -32,6 +32,11 @@ export const query = graphql`
         content
         slug
         date
+        categories {
+          nodes {
+            name
+          }
+        }
         featuredImage {
           node {
             localFile {

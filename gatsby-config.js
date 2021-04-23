@@ -31,7 +31,7 @@ module.exports = {
       options: {
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/IconoMevasa.png`,
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
