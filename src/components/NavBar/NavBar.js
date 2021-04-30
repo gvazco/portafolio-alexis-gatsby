@@ -21,10 +21,10 @@ export default function NavBarMenu() {
         <Nav className="mr-auto"></Nav>
         <Nav>
           <Nav.Link href="/">Portafolio</Nav.Link>
-          <Nav.Link eventKey={2} href="/about">
+          <Nav.Link eventKey={2} href="https://wa.link/rg1heh">
             ¿Quién Soy?
           </Nav.Link>
-          <Nav.Link eventKey={3} href="https://wa.link/szvz94">
+          <Nav.Link eventKey={3} href="https://wa.link/rg1heh">
             ¿Cómo puedo ayudarte?
           </Nav.Link>
         </Nav>
