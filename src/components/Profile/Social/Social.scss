@@ -1,0 +1,18 @@
+.social {
+  background-color: #0098d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    fill: #fff !important;
+    margin: 0 30px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

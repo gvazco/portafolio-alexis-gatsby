@@ -21,7 +21,7 @@ export default function NavBarMenu() {
         <Nav className="mr-auto"></Nav>
         <Nav>
           <Nav.Link href="/">Portafolio</Nav.Link>
-          <Nav.Link eventKey={2} href="https://wa.link/rg1heh">
+          <Nav.Link eventKey={2} href="/about-me">
             ¿Quién Soy?
           </Nav.Link>
           <Nav.Link eventKey={3} href="https://wa.link/rg1heh">

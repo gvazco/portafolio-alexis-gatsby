@@ -1,0 +1,55 @@
+.profile {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  z-index: 0;
+
+  .box {
+    position: relative;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+
+    .info {
+      padding: 50px;
+
+      &__data {
+        > span {
+          background-color: #0098d3;
+          font-weight: bold;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 4px;
+        }
+
+        > p:first-of-type {
+          margin: 10px 0 0 0;
+          font-weight: 400;
+          font-size: 40px;
+          color: #000;
+        }
+
+        .more-info {
+          .item {
+            display: flex;
+
+            p {
+              &:first-of-type {
+                width: 25%;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #000;
+              }
+              &:last-of-type {
+                width: 75%;
+                color: #a2a2a2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
