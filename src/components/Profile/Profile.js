@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import profileImage from "../../images/avatar.jpg"
 import AboutMe from "../AboutMe"
+import Skills from "../Skills"
 import "./Profile.scss"
 
 const data = [
@@ -46,6 +47,7 @@ export default function Profile() {
           </Col>
         </Row>
         <AboutMe />
+        <Skills />
       </Container>
     </div>
   )

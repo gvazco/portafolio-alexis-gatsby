@@ -35,6 +35,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /images\/icons/,
+        },
+      },
+    },
 
     /**
      * this (optional) plugin enables Progressive Web App + Offline functionality
