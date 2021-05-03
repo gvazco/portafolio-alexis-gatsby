@@ -7,15 +7,14 @@ export default function AboutMe() {
   return (
     <Container className="about-me">
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        Soy Licenciado en Diseño Gráfico Digital egresado de la Universidad
+        Tecnológica de México, tengo 27 años y Cuento con un posgrado en
+        DiseñoMultimedia. Me apasiona el campo visual, como la fotografía, Las
+        artes gráficas, la animación y video. Actualmente trabajo más de cerca
+        en el área 3D, modelando displays exhibidores, stands y diseño de
+        interiores, creación de artes o gráficos, para esta misma aplicación. Me
+        concidero un creativo ya que todo el tiempo estoy buscando ideas para
+        resolver problemas en mi entorno.
       </p>
       <hr />
 
