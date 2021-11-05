@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import profileImage from "../../images/avatar.jpeg"
 import AboutMe from "../AboutMe"
 import Skills from "../Skills"
+import Seo from "../seo"
 import "./Profile.scss"
 
 const data = [
@@ -27,6 +28,11 @@ const data = [
 export default function Profile() {
   return (
     <div className="profile">
+      <Seo
+        title="CV de Alexis Velázquez"
+        description="Habilidades y Cualidades Profesionales."
+        image={profileImage}
+      />
       <Container className="box">
         <Row className="info">
           <Col xs={12} md={4}>

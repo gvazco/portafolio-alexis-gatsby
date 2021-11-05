@@ -17,7 +17,7 @@ export const frontendSkills = [
   { type: "Photoshop", level: 70 },
   { type: "Ilustrator", level: 80 },
   { type: "Premiere", level: 50 },
-  { type: "After Effects", level: 50 },
+  { type: "AfterEffects", level: 50 },
   { type: "InDesign", level: 60 },
   { type: "Lightroom", level: 70 },
   { type: "Cinema4D", level: 70 },
