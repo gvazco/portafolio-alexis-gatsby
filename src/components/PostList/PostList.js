@@ -11,11 +11,11 @@ export default function PostList(props) {
   console.log(posts)
 
   return (
-    <Row xs={1} md={2} lg={3} className="post-list">
+    <div className="post-list masonry-wrapper">
+      <div className="masonry">
       {map(posts, post => (
-        <Col>
           <Link to={`/${post.slug}`}>
-            <Card className="post-list__item text-center">
+            <Card className="masonry__item text-center">
               <Card.Img
                 variant="top"
                 src={post.featuredImage.node.localFile.publicURL}
@@ -29,8 +29,8 @@ export default function PostList(props) {
               </Card.ImgOverlay>
             </Card>
           </Link>
-        </Col>
       ))}
-    </Row>
+      </div>
+    </div>
   )
 }
